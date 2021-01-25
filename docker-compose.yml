@@ -2,6 +2,13 @@ version: '3'
 
 services:
   nodejs:
+  build:
+    context: .
+    dockerfile: Dockerfile
+      image: node_web_app
+      container_name: project3
+      restart: unless-stopped
+
     #fill out the configuration here
     networks:
       - app-network
@@ -28,7 +35,7 @@ volumes:
     driver_opts:
       type: none
       #fill out your absolute path to your folder here
-      device: /absolute/path/to/web/template/folder
+      device: /home/kofi/Desktop/gitrepo/KofiOwusuMensah.github.io
       o: bind
 
 networks:
