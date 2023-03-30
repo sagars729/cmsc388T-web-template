@@ -1,64 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/style.css" />
-    <title>YOUR NAME</title>
-    <meta name="description" content="some desc">
-  </head>
 
-  <body>
-    <header class="main-header">
-      <br>
-      <h1 class="my-name my-name-large">YOUR NAME</h1>
-    </header>
-    <br><br><br>
-    <section class="content-section container">
-      <h2 class="section-header">About Me</h2>
-      <img class="about-prof-image" src="assets/profile.png" height="200" width="200">
-      <p>
-        Introduce Yourself
-      </p>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header>
 
-      <p>
-        Relevant Info
-      </p>
+    <nav class="same-line">
+        <div class="topnav left">
+            <a href="#home">YOUR NAME</a>
+        </div>
+        <div class="topnav right">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <!-- <a href="#about">About</a> -->
+        </div>
+    </nav>
+</header>
 
-      <p>
-        Your Interests
-      </p>
+<body>
+    <section id="home">
 
-      <br><br><br><br><br><br><br><br><br><br><br>
+        <div class="same-line-panel">
+            <img id="image" src=profile.png>
+            <div class="center">
+                <h1>YOUR NAME</h1>
+                <h2>Undergraduate Student</h2>
+                <h3>Majors, Minors</h3>
+            </div>
+
+        </div>
     </section>
-    <br>
-    <footer class="main-footer">
-      <div class="container main-footer-container">
-        <ul class="nav footer-nav">
-          <li>
-            <!-- YOUR GITHUB -->
-            <a href="https://github.com/" target="_blank">
-              <img class="sm-logo" src="assets/githubwhite.png" height="50" width="50">
-            </a>
-          </li>
-          <li>
-            <!-- YOUR LINKEDIN -->
-            <a href="https://www.linkedin.com/" target="_blank">
-              <img class="sm-logo" src="assets/linkedinwhite.png" height="50" width="50">
+    <section id="about">
+        <div class="container">
+            <h1 class="section-header">About Me</h1>
+        </div>
+        <div class="same-line-panel reveal">
+            <img id="logo" src=logo.png>
+            <div class="panel">
+                <p>Put your Bio Here</p>
+            </div>
 
-            </a>
-          </li>
-          <li>
-            <a href="https://www.cs.umd.edu/" target="_blank">
-              <img src="assets/umd-logo.png" height="34" width="195">
-            </a>
-          </li>
+        </div>
+    </section>
+    <section id="project">
+        <div class="container">
+            <h1 class="section-header">Projects</h1>
+            <div class="row">
+                <div class="column reveal" style="background-color:#A4969B;">
+                    <h2>Project 1 Title</h2>
+                    <p>Description of Project 1...</p>
+                </div>
+                <div class="column reveal" style="background-color:#BFB5B9;">
+                    <h2>Project 2 Title</h2>
+                    <p>Description of Project 2...</p>
+                </div>
+                <div class="column reveal" style="background-color:#D1CACD;">
+                    <h2>Project 3 Title</h2>
+                    <p>Description of Project 3...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="leftFooter">
+        YOUREMAIL@EMAIL.COM
+    </div>
+    <div class="rightFooter">
+        <a href="https://www.google.com/" class="fa fa-github" style="font-size:36px"></a>
 
-        </ul>
-      </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>  
-  </body>
-	
-  
+    </div>
+    <div class="rightFooterr">
+        <a href="https://www.google.com/" class="fa fa-linkedin" style="font-size:36px"></a>
+
+    </div>
+</footer>
 
 </html>
